@@ -443,3 +443,37 @@ background-color: white;            background-image: url('./goodposture.webp');
                 grid-template-columns: 1fr;
             }
         }
+
+
+
+
+
+
+        /* FIX MOBILE HEADER */
+@media (max-width: 768px) {
+    .header-content {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .logo {
+        font-size: 1.1rem; /* Plus petit sur mobile */
+    }
+    
+    .contact-btn {
+        font-size: 0.85rem; /* Bouton plus petit */
+        padding: 0.4rem 1rem;
+    }
+}
+
+/* FIX pour TRÈS petits écrans (iPhone SE, etc.) */
+@media (max-width: 400px) {
+    .logo {
+        font-size: 1rem;
+    }
+    
+    .contact-btn {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.8rem;
+    }
+}
